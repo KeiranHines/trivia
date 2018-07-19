@@ -14,7 +14,7 @@ namespace Trivia
 
         public static void Main(String[] args)
         {
-            Game aGame = new Game();
+            Game aGame = new Game(new Logger());
 
             aGame.add("Chet");
             aGame.add("Pat");
@@ -40,8 +40,8 @@ namespace Trivia
 
             } while (notAWinner);
 
+            Console.ReadKey();
         }
-
 
     }
 
